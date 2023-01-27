@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:wght@400;900&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Source+Code+Pro:wght@300&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css of side bar */
+.sidebar{
+    position: absolute;
+    background-color:rgb(26, 25, 25);
+    /* width:434px; */
+    font-family: 'Fira Sans', sans-serif;
+    height:100vh;
+    transform: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding:40px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size:22px;
+    font-weight:bold;
+    padding: 33px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+.main{
+    /* background-color:yellow; */
+    width: 100vw;
+    height:100vh;
+    padding:23px;
+    /* background-color: black;
+    color:white; */
+    margin-left:300px;
+    margin-top: 100px;
+}
+.container{
+    display: flex;
+    background-color: black;
+    color:white;
+}
+.contactform{
+    padding:0 34px;
+    /* padding-top:144px; */
+    font-family: 'Fira Sans', sans-serif;
+    /* margin:0 88px; */
+    margin-left: 200px;
+}
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 40px;
+    /* padding:12px 0; */
+        /* Clip Background Image */
+
+	  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+      animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+}
+@keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+
+
+
+
+
+.contactform form div{
+    padding:10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+   width:26vw;
+   border-radius: 5px;
+   margin:6px 0 0 0;
+   padding:3px;
+}
+.contactform{
+   margin:0 40px;
+}
+
+
+#emailHelp{
+    font-size: 14px;
+    color:rgb(40, 40, 201);
+    margin:0 5px;
+    padding: 3px 0 0 0;
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width:24px;
+    margin:3px 0;
+
+}
+
+
+
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #000000;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+  }
+
+
+.sidebarGo{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+
+.hamburger{
+    position:absolute;
+    cursor: pointer;
+    height:40px;
+    width: 15px;
+    top:10px;
+    left:10px;
+    /* background-color: black; */
+  }
+  .cross{
+      margin-left:150px;
+      height:20px;
+      width: 15px;
+  }
+
+
+@media (max-width: 1380px){
+    .contactform{
+      margin:50px 8px;
+    }
+  } 

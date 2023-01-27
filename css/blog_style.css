@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:wght@400;900&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Source+Code+Pro:wght@300&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Source+Code+Pro:wght@300&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css of side bar */
+.sidebar{
+    position: absolute;
+    background-color:rgb(26, 25, 25);
+    /* width:434px; */
+    font-family: 'Fira Sans', sans-serif;
+    height:100vh;
+    transform: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding:40px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size:22px;
+    font-weight:bold;
+    padding: 33px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+
+
+
+.main{
+    /* background-color:yellow; */
+    width: 90vw;
+    padding: 23px;
+    margin-left: 120px;
+    
+}
+.container{
+    display: flex;
+    background-color:black;
+    color:white;
+    height:100vh;
+}
+.blogItem{
+    margin:20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.blogcontainer{
+    margin:40px 88px;
+}
+.blogcontainer h1{
+    font-family: 'Fira Sans', sans-serif;
+    margin:23px;
+        /* Clip Background Image */
+
+	  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+      animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+}
+@keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+
+
+
+
+.blogItem p{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+.btn{
+    padding :5px 7px;
+    border-radius: 18px;
+    color:white;
+    background-color: dodgerblue;
+    font-size: 10px;
+    margin:10px 0;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: white;
+    color:dodgerblue
+
+}
+
+
+
+.sidebarGo{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+
+.hamburger{
+    position:absolute;
+    cursor: pointer;
+    height:40px;
+    width: 15px;
+    top:10px;
+    left:10px;
+    /* background-color: black; */
+  }
+  .cross{
+      margin-left:150px;
+      height:20px;
+      width: 15px;
+  }
+
+
+@media (max-width: 1380px){
+    .blogcontainer{
+      margin:50px 8px;
+    }
+  } 

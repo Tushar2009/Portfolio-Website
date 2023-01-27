@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:wght@400;900&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Source+Code+Pro:wght@300&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css of side bar */
+/* css of side bar */
+.sidebar{
+    position: absolute;
+    background-color:rgb(26, 25, 25);
+    /* width:434px; */
+    font-family: 'Fira Sans', sans-serif;
+    height:100vh;
+    transform: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding:40px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size:22px;
+    font-weight:bold;
+    padding: 33px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+.main{
+    /* background-color:yellow; */
+    width: 90vw;
+    /* padding: 23px; */
+}
+.container{
+    display: flex;
+    background-color: black;
+    color: white;
+}
+.content-box{
+    height:100vh;
+    color:#fff;
+}
+h1{
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+h1::after{
+    content:'';
+    background:#008000;
+    display:block;
+    height: 3px;
+    width:170px;
+    margin:20px auto 50px;
+
+}
+
+.card-group{
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left:200px;
+    /* background-color:green; */
+}
+.card-img-top
+{
+    height:250px;
+    width:320px;
+}
+.card{
+    margin:0 40px;
+}
+.card-text{
+   display:flex;
+   flex-wrap: wrap;
+   flex-grow: 1;
+}
+
+
+
+
+
+
+
+
+
+.buttons{
+    margin-top:32px;
+}
+
+.btn{
+    padding :9px 14px;
+    border-radius: 22px;
+    color:white;
+    background-color: dodgerblue;
+    font-size: 18px;
+    font-weight: bold;
+    margin:0 3px;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: white;
+    color:dodgerblue
+
+}
+
+.sidebarGo{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+
+.hamburger{
+    position:absolute;
+    cursor: pointer;
+    height:40px;
+    width: 15px;
+    top:10px;
+    left:10px;
+    /* background-color: black; */
+  }
+  .cross{
+      margin-left:150px;
+      height:20px;
+      width: 15px;
+  }
+@media (max-width: 1380px){
+    /* *{
+
+         background-color: red;
+    }
+    .sidebar{
+        transform: translate(-443px,0px);
+        position: absolute;
+    } */
+    .devPic{
+        display: none;
+    }
+} 
